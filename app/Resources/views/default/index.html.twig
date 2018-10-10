@@ -8,21 +8,21 @@
             </div>
 
             <div class="form-group row">
-                <label for="example-email-input" class="col-2 col-form-label">Email</label>
+                <label for="email-input-connection" class="col-2 col-form-label">Email</label>
                 <div class="col-10">
-                    <input class="form-control" type="email" value="exemple@gmail.com" id="example-email-input">
+                    <input class="form-control" type="email" value="" id="email-input-connection">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="example-password-input" class="col-2 col-form-label">Password</label>
+                <label for="password-input-connection" class="col-2 col-form-label">Password</label>
                 <div class="col-10">
-                    <input class="form-control" type="password" value="hunter2" id="example-password-input">
+                    <input class="form-control" type="password" value="" id="password-input-connection">
                 </div>
             </div>
             <br>
             <div class="form-group row">
                 <div class="col-12"  style="text-align: center;">
-                <button type="submit" class="btn btn-primary">Se connecter</button>
+                <button type="submit" id="bouton-connexion" class="btn btn-primary">Se connecter</button>
                 </div>
             </div>
 
@@ -32,19 +32,19 @@
                 <h1>S'incrire</h1>
 
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-2 col-form-label">Nom</label>
+                    <label for="text-input-nom" class="col-2 col-form-label">Nom</label>
                     <div class="col-10">
-                        <input class="form-control" type="text" value="Nom" id="example-text-input">
+                        <input class="form-control" type="text" value="" id="text-input-nom">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-2 col-form-label">Prenom</label>
+                    <label for="text-input-prenom" class="col-2 col-form-label">Prenom</label>
                     <div class="col-10">
-                        <input class="form-control" type="text" value="Prenom" id="example-text-input">
+                        <input class="form-control" type="text" value="" id="text-input-prenom">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-2 col-form-label">Classe</label>
+                    <label for="text-input-classe" class="col-2 col-form-label">Classe</label>
                     <div class="col-10">
                         <select class="form-control">
                             <option>BTS SIO</option>
@@ -52,6 +52,24 @@
                             <option>BTS MUC</option>
                             <option>Default select</option>
                         </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email-input-inscription" class="col-2 col-form-label">Email</label>
+                    <div class="col-10">
+                        <input class="form-control" type="email" value="" id="email-input-inscription">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="password-input-inscription" class="col-2 col-form-label">Password</label>
+                    <div class="col-10">
+                        <input class="form-control" type="password" value="" id="password-input-inscription">
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    <div class="col-12"  style="text-align: center;">
+                        <button type="submit" id="bouton-inscription" class="btn btn-primary">S'inscrire</button>
                     </div>
                 </div>
             </div>
@@ -64,7 +82,7 @@
 <style>
     body {
         font: 18px/1.5 sans-serif;
-        background: url("{{ asset('background.jpp') }}") no-repeat;
+        background: url("{{ asset('background.jpg') }}") no-repeat;
         background-size: cover; }
     h1, h2 { line-height: 1.2; margin: 0 0 .5em; }
     h1 { font-size: 36px; }
